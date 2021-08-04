@@ -1,0 +1,13 @@
+/* Select All */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body All */
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  background: #11121a;
+  color: white;
+}
