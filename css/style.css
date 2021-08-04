@@ -11,3 +11,36 @@ body {
   background: #11121a;
   color: white;
 }
+
+header {
+  background-color: #1c1c24;
+  height: 70px;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  max-width: 1250px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 25px;
+}
+
+.header-container .logo {
+  height: 50px;
+
+  margin-right: 10px;
+}
+
+.header-container .logo img {
+  height: 100%;
+
+  border: 3px solid orange;
+  border-radius: 50%;
+}
