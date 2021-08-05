@@ -79,3 +79,8 @@ header {
   font-size: 20px;
   margin-left: 20px;
 }
+
+.input-container i {
+  font-size: 25px;
+  margin-left: 25px;
+}
