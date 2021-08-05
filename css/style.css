@@ -20,6 +20,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 25px;
 }
 
 .header-container {
@@ -43,4 +45,18 @@ header {
 
   border: 3px solid orange;
   border-radius: 50%;
+}
+
+.search {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.search-container {
+  background-color: #1c1c24;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid #222328;
 }
