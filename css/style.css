@@ -84,3 +84,20 @@ header {
   font-size: 25px;
   margin-left: 25px;
 }
+
+.button-container {
+  background-color: #3060ff;
+  width: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.button-container:hover {
+  background-color: #5a81ff;
+}
