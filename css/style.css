@@ -123,3 +123,17 @@ header {
   font-size: 20px;
   margin-left: 25px;
 }
+
+.jobs-container {
+  background: #11121a;
+
+  flex-grow: 1;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.job-tile {
+  background-color: orange;
+}
