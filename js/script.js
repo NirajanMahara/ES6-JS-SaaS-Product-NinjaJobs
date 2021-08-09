@@ -15,7 +15,11 @@ function showJobs(jobs) {
   // console.log('💼 Jobs in showJobs', jobs);
 
   let jobsContainer = document.querySelector('.jobs-container');
-  console.log(jobsContainer);
+  // console.log(jobsContainer);
+
+  jobs.forEach((job) => {
+    console.log(job, job.roleName, job.company);
+  });
 }
 
 getJobs().then((data) => {
