@@ -26,20 +26,18 @@ function showJobs(jobs) {
       <div class="job-tile">
         <div class="top">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/600px-Tesla_logo.png"
+            src="${job.logo}"
           />
           <span class="material-icons more-horiz">more_horiz</span>
         </div>
 
         <div class="rolename">
-          <span>Software Engineer</span>
+          <span>${job.roleName}</span>
         </div>
 
         <div class="description">
           <span
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            laoreet ligula sit amet mauris elementum, vitae imperdiet quam
-            pharetra. Nullam vitae lobortis ipsum.
+            >${job.requirements.content}
           </span>
         </div>
 
@@ -50,7 +48,6 @@ function showJobs(jobs) {
       </div>
     `;
   });
-  console.log(jobsHTML);
 }
 
 getJobs().then((data) => {
