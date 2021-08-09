@@ -175,6 +175,8 @@ header {
 }
 
 .description {
+  flex-grow: 1;
+
   height: 105px;
   overflow: hidden;
 
