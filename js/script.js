@@ -12,7 +12,10 @@ function getJobs() {
 }
 
 function showJobs(jobs) {
-  console.log('💼 Jobs in showJobs', jobs);
+  // console.log('💼 Jobs in showJobs', jobs);
+
+  let jobsContainer = document.querySelector('.jobs-container');
+  console.log(jobsContainer);
 }
 
 getJobs().then((data) => {
