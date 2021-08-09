@@ -48,6 +48,8 @@ function showJobs(jobs) {
       </div>
     `;
   });
+
+  jobsContainer.innerHTML = jobsHTML;
 }
 
 getJobs().then((data) => {
