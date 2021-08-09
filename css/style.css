@@ -103,3 +103,23 @@ header {
 .button-container:hover {
   background-color: #5a81ff;
 }
+
+.jobs-list {
+  background-color: #11121a;
+
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 25px;
+}
+
+.jobs-list h1 {
+  font-size: 20px;
+  margin-left: 25px;
+}
