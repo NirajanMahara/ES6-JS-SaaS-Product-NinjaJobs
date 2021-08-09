@@ -4,12 +4,17 @@ document.querySelector('.button-container').addEventListener('click', () => {
 });
 
 function getJobs() {
-  fetch('data.json')
+  return fetch('data.json')
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       return data;
     });
 }
 
-getJobs();
+function showJobs(jobs) {
+  console.log('💼 Jobs in showJobs', jobs);
+}
+
+getJobs().then((data) => {
+  showJobs(data);
+});
