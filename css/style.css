@@ -127,13 +127,86 @@ header {
 .jobs-container {
   background: #11121a;
 
-  flex-grow: 1;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 40px;
 }
 
 .job-tile {
-  background-color: orange;
+  background: #1c1c24;
+  color: white;
+
+  border-radius: 10px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding: 30px;
+
+  transition: transform 0.2s;
+}
+
+.job-tile:hover {
+  transform: scale(1.05);
+}
+
+.top {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.top img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.rolename {
+  margin: 20px 0px;
+}
+
+.rolename span {
+  font-size: 22px;
+}
+
+.description {
+  height: 105px;
+  overflow: hidden;
+
+  font-size: 18px;
+  color: #96939b;
+}
+
+.buttons {
+  color: black;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+}
+
+.button {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  color: #96939b;
+  background-color: #2e2e39;
+  font-size: 14px;
+}
+
+.apply-now {
+  color: white;
+  background: #3060ff;
+
+  margin-right: 15px;
 }
