@@ -11,6 +11,26 @@ function getJobs() {
     });
 }
 
+function filterJobs(jobs, searchText) {
+  if (searchText) {
+    let filteredJobs = jobs.filter((job) => {
+      if (
+        job.roleName.toLowerCase().includes(searchText) ||
+        job.type.toLowerCase().includes(searchText) ||
+        job.company.toLowerCase().includes(searchText) ||
+        job.requirements.content.toLowerCase().includes(searchText)
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    return filteredJobs;
+  } else {
+    return jobs;
+  }
+}
+
 function showJobs(jobs) {
   // console.log('💼 Jobs in showJobs', jobs);
 
