@@ -5,6 +5,8 @@ document.querySelector('.button-container').addEventListener('click', () => {
   getJobs().then((jobs) => {
     let filteredJobs = filterJobs(jobs, text);
     console.log(filteredJobs, '🔎♻ Value');
+
+    showJobs(filteredJobs);
   });
 });
 
@@ -77,6 +79,7 @@ function showJobs(jobs) {
   jobsContainer.innerHTML = jobsHTML;
 }
 
+// when the application is loaded
 getJobs().then((data) => {
   showJobs(data);
 });
